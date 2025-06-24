@@ -212,35 +212,6 @@ nav .close path {
   font-size: 1.2rem;
 }
 
-.about {
-  display: flex;
-  justify-content: space-between;
-  gap: 70px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 60px;
-}
-.about .about-image {
-  width: 400px;
-}
-.about .about-image img {
-  width: 100%;
-  border-radius: 50%;
-  animation: Bellaintroload 3s forwards;
-}
-.about .about-text-container {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.about .about-text-container .about-text p {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: -0.38px;
-}
-
 .skills {
   margin-top: 70px;
   display: flex;
@@ -648,4 +619,25 @@ footer .footer-container .copyright {
 }
 logo {
   animation: zoom-in 0.8s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
 }/*# sourceMappingURL=style.css.map */

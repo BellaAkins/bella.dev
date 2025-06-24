@@ -237,43 +237,7 @@ nav {
     }
   }
 }
-//About
-.about {
-  display: flex;
-  justify-content: space-between;
-  gap: 70px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  //  padding: 14px 18px;
 
-  .about-image {
-    width: 400px;
-    img {
-      width: 100%;
-      border-radius: 50%;
-      animation: Bellaintroload 3s forwards;
-    }
-  }
-  .about-text-container {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    // padding: 28px;
-    // background: red;
-    // width: 500px;
-
-    .about-text {
-      p {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: -0.38px;
-      }
-    }
-  }
-}
 //Skills
 .skills {
   margin-top: 70px;
@@ -759,4 +723,25 @@ footer {
 
 logo {
   animation: zoom-in 0.8s ease-in-out;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
 }
