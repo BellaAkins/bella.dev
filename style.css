@@ -383,6 +383,7 @@ nav .close path {
 }
 .contact .contact-container .contact-form input[type=submit]:hover {
   background: #f1356d;
+  opacity: 0.75;
 }
 .contact .contact-container .connect-title {
   margin-top: 40px;
@@ -390,14 +391,22 @@ nav .close path {
   border-radius: 20%;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .contact-container .connect-title a {
+  text-decoration: underline;
+  color: #f1356d;
 }
 .contact .contact-container .connect-title .connect-card {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 .contact .contact-container .connect-title .connect-card img {
-  width: 30px;
+  width: 20px;
+  cursor: pointer;
 }
 .contact .contact-container .opporturnities {
   margin-top: 40px;
@@ -416,7 +425,7 @@ footer {
   background: transparent;
 }
 footer img {
-  width: 25px;
+  width: 20px;
 }
 footer .footer-container .footer-top {
   display: flex;
@@ -447,6 +456,7 @@ footer .footer-container .copyright {
   padding: 10px;
   font-size: 1rem;
   color: #f1356d;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 680px) {
@@ -640,4 +650,19 @@ logo {
 .fade-in.visible {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Reset position */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.opporturnities {
+  animation: bounce 1.5s infinite;
 }/*# sourceMappingURL=style.css.map */
