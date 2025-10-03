@@ -294,6 +294,7 @@ nav .close path {
   display: flex;
   gap: 10px;
   margin-top: 25px;
+  display: none;
 }
 .projects .projects-container .projects-box .projects-about .languages-box .language {
   padding: 5px 10px;
@@ -595,12 +596,10 @@ footer .footer-container .copyright {
 }
 @keyframes Bellaintroload {
   from {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 /* filepath: /Users/user/Documents/Portfolio/Bella-Portfolio/style.scss */
